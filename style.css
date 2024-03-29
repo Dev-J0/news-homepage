@@ -75,9 +75,32 @@ a:link {
 
 
 .close-button {
-    background-color: red;
+    background-color: transparent;
+    display: block;
+    position: fixed;
+    right: 30px;
+    width: 40px;
+    top: 10px;
+    color: black;
+    border: none;
+    font-size: 30px;
 }
 
+.newDiv {
+    background: white;
+    height: 800px;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 150px;
+}
 
 
 
@@ -93,7 +116,7 @@ a:link {
     #hamburger {
         display: block;
         position: fixed;
-        right: 300px;
+        right: 30px;
         width: 40px;
         top: 30px;
     }
