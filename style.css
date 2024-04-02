@@ -6,6 +6,7 @@
 
 html
      {
+        padding: 30px 100px 30px 100px;
 height: 100vh;
 max-width: 100%;
     }
@@ -59,7 +60,16 @@ a:link {
 
 #hamburger {
     display: none;
+    background: transparent;
+    border:none;
+
 }
+
+ #hamburger img {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+ }
 
 #overlay {
     position: fixed;
@@ -87,8 +97,9 @@ a:link {
 }
 
 .newDiv {
+    padding-top: 80px;
     background: white;
-    height: 800px;
+    height: 100%;
     width: 200px;
     position: fixed;
     right: 0;
@@ -102,7 +113,15 @@ footer {
     right: 150px;
 }
 
-
+.newDiv a {
+    color: black;
+    margin: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   height: 20px;
+}
 
         /* MEDIA QUERIESSSSSSSSS */
 
