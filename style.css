@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'MyFont'; 
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');    
+  }
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'MyFont';
 }
 
 html
@@ -13,7 +21,7 @@ max-width: 100%;
 
 .menu {
     height: 100px;
-    padding: 60px 100px 50px 100px;
+    padding: 60px 100px 30px  0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,9 +31,9 @@ max-width: 100%;
    width: 100%;
   
 }
-#categories
+
 .main-container {
-    margin: 60px 100px 50px 100px;
+    margin: 30px 50px 100px 0px;
 }
 
  #logo {
@@ -123,19 +131,82 @@ footer {
    height: 20px;
 }
 
+.container1 {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 450px;
+}
+
+.main-picture-container {
+
+    background-image: url('./assets/images/image-web-3-desktop.jpg');
+    background-size: cover;
+    height: 200px; 
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.left-column {
+    width: 45%;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.right-column {
+    width: 55%; 
+    font-size: 14px;
+    color: rgb(121, 119, 119);
+    padding: 0px 10px 10px 10px;
+}
+
+h1, h4 {
+    margin-bottom: 10px; 
+}
+
+#read-more {
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border:none;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+/* DO NOT FORGET THE HOVERING CHANGING COLORS TO PEACH */
+
+
+
+
+
         /* MEDIA QUERIESSSSSSSSS */
 
 
  @media screen and (max-width: 650px) {
-    
+
+    html {
+        margin: 0; 
+        padding: 10px;
+    }
+
+
     #categories {
         display: none;
+        
     }
 
     #hamburger {
         display: block;
         position: fixed;
-        right: 30px;
+        right: 70px;
         width: 40px;
         top: 30px;
     }
@@ -143,14 +214,16 @@ footer {
     #logo img {
         width: 30px;
         height: 20px;
-        left: 20px;
+       
         position: fixed;
         top: 30px;
       }
 
 
-
-
+.main-picture-container {
+    background-image: url('./assets/images/image-web-3-mobile.jpg');
+    background-size: cover;
+    width: 300px;
   }
 
- 
+}
